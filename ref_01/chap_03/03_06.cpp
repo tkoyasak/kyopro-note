@@ -7,13 +7,13 @@ int main(void)
 	int K, N;
 	cin >> K >> N;
 	int count = 0;
-	for (int x = 0; x <= min(K, N); x++)
+	for (int x = 0; x <= min(K, N); ++x)
 	{
-		for (int y = 0; y <= min(K, N); y++)
+		for (int y = 0; y <= min(K, N); ++y)
 		{
 			int z = N - x - y;
 			if (0 <= z && z <= K)
-					count++;
+					++count;
 		}
 	}
 	cout << count << endl;
