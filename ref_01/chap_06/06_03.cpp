@@ -22,7 +22,4 @@ int	main(void)
 		cin >> a[i];
 	sort(ALL(a));
 	int res = 0;
-
-
-	cout << res << endl;
 }
