@@ -4,7 +4,7 @@
 2. answered
 3. answered
 4. answered
-5.
-6.
-7.
+5. answered
+6. answered
+7. answered
 

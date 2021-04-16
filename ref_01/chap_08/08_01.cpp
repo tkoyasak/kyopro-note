@@ -6,10 +6,10 @@ using namespace std;
 
 // 連結リストの各ノードを表す構造体
 struct	Node{
-	Node *prev, *next;
+	Node *next;
 	string name;
 	Node(string name_ = ""):
-	prev(NULL), next(NULL), name(name_){}
+	next(NULL), name(name_){}
 };
 
 // 番兵を表すノード
@@ -19,7 +19,6 @@ Node *nil;
 void	init()
 {
 	nil = new Node();
-	nil->prev = nil;
 	nil->next = nil;
 }
 
