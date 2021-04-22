@@ -1,41 +1,72 @@
 // 迷路(HxW)を解け
-// DFS
+// BFS
 
 #include <bits/stdc++.h>
 using namespace std;
-using Maze = vector<vector<int>>;
+using Maze = vector<vector<char>>;
+using Board = vector<vector<int>>;
 
-vector<vector<int>>	dist;
-int	H, W, s_h, s_w, g_h, g_w;
+int	H, W;
 
-void	dfs(const Maze &M, int h, int w, int d){
-	if (dist[g_h][g_w]) return;
-	if (dist[h][w]) return;
-	dist[h][w] = d;
-	if (w+1 < W && M[h][w+1]) dfs(M, h, w+1, d+1);
-	if (w-1 >= 0 && M[h][w-1]) dfs(M, h, w-1, d+1);
-	if (h+1 < H && M[h+1][w]) dfs(M, h+1, w, d+1);
-	if (h-1 >= 0 && M[h-1][w]) dfs(M, h-1, w, d+1);
+void	bfs(const Maze &M, Board &dist, int sx, int sy){
+	int dx[4] = {1, 0, -1, 0};
+	int dy[4] = {0, 1, 0, -1};
+
+	queue<pair<int, int>> que;
+	que.push(make_pair(sx, sy));
+
+	while (!que.empty()){
+		pair<int, int> cur = que.front();
+		int x = cur.first;
+		int y = cur.second;
+		que.pop();
+
+		for (int dir = 0; dir < 4; ++dir){
+			int nx = x + dx[dir];
+			int ny = y + dy[dir];
+			if (nx < 0 || ny < 0 || nx >= H || ny >= W) continue;
+			if (M[nx][ny] == '#') continue;
+
+			if (dist[nx][ny] == -1){
+				que.push(make_pair(nx, ny));
+				dist[nx][ny] = dist[x][y] + 1;
+			}
+		}
+	}
 }
 
 int	main(void){
 	// H:行, W:列
-	// s_*:start, g_*:goal
-	cin >> H >> W >> s_h >> s_w >> g_h >> g_w;
+	// s*:start, g*:goal
+	cin >> H >> W;
 
-	// true = 1, false = 0
-	Maze M(H, vector<int>(W));
+	// "."道, "#"壁
+	Maze M(H, vector<char>(W));
+	int sx, sy, gx, gy;
 	for (int i = 0; i < H; ++i){
 		for (int j = 0; j < W; ++j){
-			int m;
+			char m;
 			cin >> m;
+			if (m == 'S') {sx = i; sy = j;}
+			if (m == 'G') {gx = i; gy = j;}
 			M[i][j] = m;
 		}
 	}
 
-	dist.assign(H, vector<int>(W, 0));
-	dfs(M, s_h, s_w, 0);
+	// 各セルの最短距離
+	Board dist(H, vector<int>(W, -1));
+	dist[sx][sy] = 0;
 
-	if (dist[g_h][g_w]) cout << "goal" << endl;
+	bfs(M, dist, sx, sy);
+
+	if (dist[gx][gy] != -1) cout << "goal" << endl;
 	else cout << "not goal" << endl;
+
+	for (int i = 0; i < H; ++i){
+		for (int j = 0; j < W; ++j){
+			if (M[i][j] == '#' || dist[i][j] == -1) cout << setw(3) << M[i][j];
+			else cout << setw(3) << dist[i][j];
+		}
+		cout << endl;
+	}
 }
