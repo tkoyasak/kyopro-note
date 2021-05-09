@@ -21,6 +21,5 @@ int main(void)
 		if (min < a[i] && a[i] < min_s)
 			min_s = a[i];
 	}
-	cout << min << endl;
 	cout << min_s << endl;
 }

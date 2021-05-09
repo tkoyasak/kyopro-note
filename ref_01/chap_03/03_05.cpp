@@ -13,7 +13,7 @@ int	main(void)
 	int cnt = 0, cnt_n;
 	while (flag)
 	{
-		cnt_n = 0;
+		cnt_n = 1;
 		for (int i = 0; i < N; ++i)
 		{
 			if (a[i] % 2 == 0)

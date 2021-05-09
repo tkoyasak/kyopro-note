@@ -6,10 +6,11 @@ using namespace std;
 
 int	main(void)
 {
-	int N, nb;
 	string S;
-	cin >> N >> S;
-	for (int i = 0; i < N; ++i)
-		nb += pow(10, i) * (S[N - i - 1] - '0');
-	cout << nb << endl;
+	cin >> S;
+	int N = S.size();
+	int res = 0;
+
+
+	cout << res << endl;
 }
