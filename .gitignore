@@ -1,6 +1,7 @@
 # For Me
 .obsidian
-.cpp
+.vscode
+test.cpp
 
 # Prerequisites
 *.d
