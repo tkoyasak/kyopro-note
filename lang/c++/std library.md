@@ -3,3 +3,4 @@
 
 ## string
 `substr()`
+`erase()`

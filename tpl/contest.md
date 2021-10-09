@@ -1,8 +1,8 @@
 # {{title}}
 
 No	:
-url	: <!-- url -->
-tag	: <!--[[ content ]]  #ABC #color-->
+url	: <!--url-->
+tag	: <!--[[content]]  #ABC #color-->
 
 ### idea
 
