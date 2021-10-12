@@ -2,7 +2,7 @@
 
 No	: 176  
 url	: https://atcoder.jp/contests/abc176/tasks/abc176_a  
-tag	: [[  ]]  #ABC #gray 
+tag	: [[整数比較]]  #ABC #gray 
 
 ### idea
 - たこ焼きを焼く回数は，切り捨てが発生したときのみ+1を行う．

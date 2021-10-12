@@ -2,7 +2,7 @@
 
 No	: 119  
 url	: https://atcoder.jp/contests/abc119/tasks/abc119_a  
-tag	: [[文字列比較]]  #ABC #gray 
+tag	: [[文字列操作]]  #ABC #gray 
 
 ### idea
 - `scanf()`を利用すると，整数型として読み取れる．
