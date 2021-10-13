@@ -2,7 +2,7 @@
 
 No	: 155  
 url	: https://atcoder.jp/contests/abc155/tasks/abc155_a  
-tag	: [[整数比較]]  #ABC #gray 
+tag	: [[整数判定]]  #ABC #gray 
 
 ### idea
 - 数の種類数をカウントするには，`set`を用いると良い．

@@ -2,7 +2,7 @@
 
 No	: 137  
 url	: https://atcoder.jp/contests/abc137/tasks/abc137_a  
-tag	: [[整数比較]]  #ABC #gray
+tag	: [[整数判定]]  #ABC #gray
 
 ### idea
 - `{}`で与えてあげると，複数個の比較ができる．
