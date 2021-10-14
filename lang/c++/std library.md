@@ -1,6 +1,7 @@
 ## cmath
-`pow(x, y)`
+`pow()`
 
 ## string
 `substr()`
 `erase()`
+`find()`
