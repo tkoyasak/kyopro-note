@@ -5,3 +5,4 @@
 `substr()`
 `erase()`
 `find()`
+`swap()`
