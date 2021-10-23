@@ -12,6 +12,15 @@ using namespace std;
 template<class T> inline bool chmin(T& a, T b) {if(a>b){a=b;return(true);}return(false);}
 template<class T> inline bool chmax(T& a, T b) {if(a<b){a=b;return(true);}return(false);}
 
+using ll=long long;
+using ull=unsigned long long;
+using ld=long double;
+using vll=vector<ll>;
+const int inf = 1e9 + 10;
+const ll INF = 1e18;
+const ld EPS = 1e-10;
+
+
 int	main(void)
 {
 	//
