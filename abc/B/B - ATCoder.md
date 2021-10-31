@@ -1,6 +1,6 @@
 # B - ATCoder
 
-No	: 122 
+No	: 122  
 url	: https://atcoder.jp/contests/abc122/tasks/abc122_b  
 tag	: [[文字列操作]]  #ABC #gray
 
