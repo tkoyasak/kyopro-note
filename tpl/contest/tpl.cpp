@@ -16,6 +16,7 @@ using ll=long long;
 using ull=unsigned long long;
 using ld=long double;
 using vll=vector<ll>;
+using vs=vector<string>;
 const int inf = 1e9 + 10;
 const ll INF = 1e18;
 const ld EPS = 1e-10;
