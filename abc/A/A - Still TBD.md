@@ -11,11 +11,12 @@ tag	: [[文字列操作]]  #ABC #gray
 ```cpp
 int main(void)
 {
-	int y,m,d;
-	scanf("%d/%d/%d",&y,&m,&d);
+  int y,m,d;
+  scanf("%d/%d/%d",&y,&m,&d);
 
-	using T = tuple<int, int, int>;
-	T cur(y,m,d),hei(2019,4,30);
-	cout<<(cur<=hei?"Heisei":"TBD")<<endl;
+  using T = tuple<int, int, int>;
+  T cur(y,m,d),hei(2019,4,30);
+
+  cout<<(cur<=hei?"Heisei":"TBD")<<endl;
 }
 ```

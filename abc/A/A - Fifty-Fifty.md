@@ -11,10 +11,11 @@ tag	: [[文字列操作]]  #ABC #gray
 ```cpp
 int main(void)
 {
-	string s;
-	cin>>s;
+  string s;
+  cin>>s;
 
-	sort(all(s));
-	cout<<(s[0]==s[1]&&s[1]!=s[2]&&s[2]==s[3]?"Yes":"No")<<endl;
+  sort(all(s));
+
+  YesNo(s[0]==s[1]&&s[1]!=s[2]&&s[2]==s[3]);
 }
 ```

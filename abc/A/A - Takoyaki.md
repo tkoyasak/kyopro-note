@@ -14,10 +14,10 @@ tag	: [[整数判定]]  #ABC #gray
 ```cpp
 int	mian(void)
 {
-	int N,X,T;
-	cin>>N>>X>>T;
+  int N,X,T;
+  cin>>N>>X>>T;
+  int tiles = (N+X-1)/X;
 
-	int tiles = (N+X-1)/X;
-	cout<<times*T<<endl;
+  cout<<times*T<<endl;
 }
 ```

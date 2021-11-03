@@ -11,13 +11,13 @@ tag	: [[整数判定]]  #ABC #gray
 ```cpp
 int	main(void)
 {
-	set<int> s;
-	for (int i=0;i<3;++i) {
-		int x;
-		cin>>x;
-		s.insert(x);
-	}
-	
-	cout<<(s.size()==2?"Yes":"No")<<endl;
+  set<int> s;
+  rep(i,3)) {
+    int x;
+    cin>>x;
+    s.insert(x);
+  }
+
+  cout<<(s.size()==2?"Yes":"No")<<endl;
 }
 ```

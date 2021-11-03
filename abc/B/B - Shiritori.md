@@ -11,24 +11,24 @@ tag	: [[文字列操作]]  #ABC #gray
 ```cpp  
 int main(void)
 {
-	ll n;
-	cin>>n;
-	set<string> s;
-	vector<string> ss(n);
-	rep(i,n) {
-		cin>>ss[i];
-		s.insert(ss[i]);
-	}
+  ll n;
+  cin>>n;
+  set<string> s;
+  vector<string> ss(n);
+  rep(i,n) {
+    cin>>ss[i];
+    s.insert(ss[i]);
+  }
 
-	bool ok=true;
-	if(s.size()!=n) ok=false;
+  bool ok=true;
+  if(s.size()!=n) ok=false;
 
-	char u=ss[0].front();
-	rep(i,n) {
-		if(u!=ss[i].front()) ok=false;
-		u=ss[i].back();
-	}
+  char u=ss[0].front();
+  rep(i,n) {
+    if(u!=ss[i].front()) ok=false;
+    u=ss[i].back();
+  }
 
-	YesNo(ok);
+  YesNo(ok);
 }
 ```

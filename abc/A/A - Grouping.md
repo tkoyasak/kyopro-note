@@ -11,22 +11,24 @@ tag	: [[整数判定]]  #ABC #gray
 ```cpp
 int	main(void)
 {
-	int a[]={0,1,3,1,2,1,2,1,1,2,1,2,1};
-	int x,y;
-	cin>>x>>y;
-	cout<<(a[x]==a[y]?"Yes":"No")<<endl;
+  int a[]={0,1,3,1,2,1,2,1,1,2,1,2,1};
+  int x,y;
+  cin>>x>>y;
+
+  YesNo(a[x]==a[y]);
 }
 ```
 
 ```cpp
 int	main(void)
 {
-	map<int,int> a;
-	a[1]=a[3]=a[5]=a[7]=a[8]=a[10]=a[12]=1;
-	a[4]=a[6]=a[9]=a[11]=2;
-	a[2]=3;
-	int x,y;
-	cin>>x>>y;
-	cout<<(a[x]==a[y]?"Yes":"No")<<endl;
+  int x,y;
+  cin>>x>>y;
+  map<int,int> a;
+  a[1]=a[3]=a[5]=a[7]=a[8]=a[10]=a[12]=1;
+  a[4]=a[6]=a[9]=a[11]=2;
+  a[2]=3;
+
+  cout<<(a[x]==a[y]?"Yes":"No")<<endl;
 }
 ```

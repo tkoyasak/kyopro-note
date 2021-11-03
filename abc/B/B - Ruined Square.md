@@ -15,12 +15,12 @@ $$(x_4,y_4)=(x_1-dy,y_1+dx)$$
 ```cpp
 int main(void)
 {
-	int x1,y1,x2,y2;
-	cin>>x1>>y1>>x2>>y2;
+  int x1,y1,x2,y2;
+  cin>>x1>>y1>>x2>>y2;
 
-	int dx=x2-x1;
-	int dy=y2-y1;
+  int dx=x2-x1;
+  int dy=y2-y1;
 
-	cout<<x2-dy<<" "<<y2+dx<<" "<<x1-dy<<" "<<y1+dx<<endl;
+  cout<<x2-dy<<" "<<y2+dx<<" "<<x1-dy<<" "<<y1+dx<<endl;
 }
 ```

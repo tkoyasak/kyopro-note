@@ -11,9 +11,9 @@ tag	: [[bit]]  #ABC #gray
 ```cpp
 int	main(void)
 {
-	int a,b;
-	cin>>a>>b;
-	
-	cout<<(a^b)<<endl;
+  int a,b;
+  cin>>a>>b;
+
+  cout<<(a^b)<<endl;
 }
 ```

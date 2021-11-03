@@ -11,9 +11,9 @@ tag	: [[整数判定]]  #ABC #gray
 ```cpp
 int	main(void)
 {
-	int a,b;
-	cin>>a>>b;
-	
-	cout<<max({a+b,a-b,a*b})<<endl;
+  int a,b;
+  cin>>a>>b;
+
+  cout<<max({a+b,a-b,a*b})<<endl;
 }
 ```

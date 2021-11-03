@@ -11,12 +11,14 @@ tag	: [[整数判定]]  #ABC #gray
 ```cpp
 int	main(void)
 {
-	int a,b;
-	cin>>a>>b;
-	if (a==1) a+=13;
-	if (b==1) b+=13;
-	if (a==b) cout<<"Draw\n";
-	else if (a>b) cout<<"Alice\n";
-	else cout<<"Bob\n";
+  int a,b;
+  cin>>a>>b;
+
+  if (a==1) a+=13;
+  if (b==1) b+=13;
+
+  if (a==b) cout<<"Draw\n";
+  else if (a>b) cout<<"Alice\n";
+  else cout<<"Bob\n";
 }
 ```

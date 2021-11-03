@@ -11,15 +11,15 @@ tag	: [[整数論]]  #ABC #gray
 ```cpp
 int main(void)
 {
-	ll n; cin>>n;
-	ll mod=pow(10,9)+7;
-	ll ans=1;
+  ll n; cin>>n;
+  ll mod=pow(10,9)+7;
+  ll ans=1;
 
-	reps(i,1,n+1) {
-		ans*=i;
-		ans%=mod;
-	}
+  reps(i,1,n+1) {
+    ans*=i;
+    ans%=mod;
+  }
 
-	cout<<ans<<endl;
+  cout<<ans<<endl;
 }
 ```

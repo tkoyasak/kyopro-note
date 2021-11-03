@@ -10,9 +10,10 @@ tag	: [[文字列操作]]  #ABC #gray
 ```cpp
 int	main(void)
 {
-	char c;
-	cin>>c;
-	const string vowel="aeiou";
-	cout<<vowel.find(c)==string::npos?"vowel":"consonant"<<endl;
+  char c;
+  cin>>c;
+  const string s="aeiou";
+
+  cout<<s.find(c)==string::npos?"vowel":"consonant"<<endl;
 }
 ```
