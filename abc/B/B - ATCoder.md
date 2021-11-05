@@ -18,8 +18,8 @@ int	main(void)
 
   rep(i,s.size()) {
     ll len=0;
-    rep(j,s.size()-i+1) {
-    	if(sub.find(s[i+j])) len++;
+    reps(j,i,s.size()) {
+    	if(sub.find(s[j])) len++;
     	else break;
     }
     chmax(ans,len);
