@@ -20,9 +20,9 @@ using ld=long double;
 using vi=vector<int>;
 using vll=vector<long long>;
 using vs=vector<string>;
-const int inf = 1e9+10;
-const ll INF = 1e18;
-const ld EPS = 1e-10;
+const int inf=1e9+10;
+const long long INF=1e18;
+const long double EPS=1e-10;
 
 
 int	main(void)
