@@ -1,6 +1,6 @@
 # B - Guidebook
 
-No	: 128
+No	: 128  
 url	: https://atcoder.jp/contests/abc128/tasks/abc128_b  
 tag	: [[ソート]]  #ABC #gray
 
