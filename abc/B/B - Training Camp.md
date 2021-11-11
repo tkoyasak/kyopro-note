@@ -2,7 +2,7 @@
 
 No	: 055  
 url	: https://atcoder.jp/contests/abc055/tasks/abc055_b  
-tag	: [[整数論]]  #ABC #gray
+tag	: [[整数論]] [[余り]]  #ABC #gray
 
 ### idea
 - [「1000000007 で割ったあまり」の求め方を総特集！](https://qiita.com/drken/items/3b4fdf0a78e7a138cd9a)
