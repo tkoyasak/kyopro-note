@@ -19,7 +19,7 @@ int	main(void)
   rep(i,s.size()) {
     ll len=0;
     reps(j,i,s.size()) {
-    	if(sub.find(s[j])) len++;
+    	if(sub.find(s[j])!=string::npos) len++;
     	else break;
     }
     chmax(ans,len);
