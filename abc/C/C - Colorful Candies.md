@@ -21,11 +21,11 @@ int	main(void)
   int ans=0,kinds=0;
 
   rep(i,n) {
-    if(cnt[c[i]]==0) kinds++;
+    if(cnt[c[i]]==0) ++kinds;
     cnt[c[i]]++;
     if(i>=k) {
       cnt[c[i-k]]--;
-      if(cnt[c[i-k]]==0) kinds--;
+      if(cnt[c[i-k]]==0) --kinds;
     }
     chmax(ans,kinds);
   }

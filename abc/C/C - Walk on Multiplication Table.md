@@ -17,9 +17,7 @@ int	main(void)
   ll ans=INF;
   ll m=sqrt(n)+1;
 
-  reps(i,1,m) {
-    if(n%i==0) chmin(ans,i+n/i-2);
-  }
+  reps(i,1,m) if(n%i==0) chmin(ans,i+n/i-2);
 
   cout<<ans<<endl;
 }

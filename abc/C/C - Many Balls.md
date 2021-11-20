@@ -26,11 +26,12 @@ bit列の操作
 int	main(void)
 {
   ll n; cin>>n;
-  string ans="";
+  string ans;
+
   while(n) {
     if(n&1) {
       ans+='A';
-      n--;
+      --n;
     }
     else {
       ans+='B';
@@ -38,6 +39,7 @@ int	main(void)
     }
   }
   reverse(all(ans));
+
   cout<<ans<<endl;
 }
 ```

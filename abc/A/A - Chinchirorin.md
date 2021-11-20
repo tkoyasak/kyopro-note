@@ -14,9 +14,7 @@ int	main(void)
   int a,b,c;
   cin>>a>>b>>c;
 
-  if (a!=b&&b!=c)
-    cout<<0<<endl;
-  else
-    cout<<(a^b^c)<<endl;
+  if (a!=b&&b!=c) cout<<0<<endl;
+  else cout<<(a^b^c)<<endl;
 }
 ```

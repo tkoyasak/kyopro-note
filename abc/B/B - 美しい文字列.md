@@ -17,7 +17,7 @@ int	main(void)
 
   reps(i,'a','z'+1) {
     int cnt=0;
-    rep(j,s,size()) if(i==s[j]) cnt++;
+    rep(j,s,size()) if(i==s[j]) ++cnt;
     if(cnt%2==1) {
       ok=false;
       break;

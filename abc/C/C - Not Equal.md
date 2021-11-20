@@ -25,6 +25,7 @@ int	main(void)
 
   sort(all(c));
   rep(i,n) ans=ans*(c[i]-i)%mod;
+
   cout<<ans<<endl;
 }
 ```

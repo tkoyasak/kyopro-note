@@ -24,9 +24,9 @@ int	mian(void)
     else next=3*cur+1;
   
     if(done.count(next)) {
-    cout<<i<<endl;
-    return 0;
-  }
+      cout<<i<<endl;
+      return 0;
+    }
   
     done.insert(cur);
     cur=next;
