@@ -31,7 +31,7 @@ int	main(void)
 ```
 
 ```cpp
-int main(void)
+int	main(void)
 {
   string s; cin>>s;
   string chokudai="*chokudai";
