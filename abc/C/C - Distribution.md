@@ -6,7 +6,7 @@ tag	: [[動的計画法]]  #ABC #gray
 
 ### idea
 - まず，円周ではなく，数直線で $[1,n]$ の範囲を考える．
-  - $\text{dp}[i]$ := $i$ 番目に宝石がくる最短時間
+  - $\text{dp}[i] \coloneqq$ $i$ 番目に宝石がくる最短時間
   - $\text{dp}[0]=\text{t}[0]$，$\text{dp}[i]=\text{min}(\text{dp}[i-1]+\text{t}[i-1],\text{t}[i])$ となる．
 - 円周を考えると，$n-2 \rightarrow n-1 \rightarrow 0 \rightarrow 1$ となり，$\text{dp}[0]$ が更新される場合がある．
 - したがって，２周目の更新を行う．しかし，３周目以降の更新の必要はない．
