@@ -7,7 +7,7 @@ tag	: [[整数判定]]  #ABC #gray
 ### idea
 - たこ焼きを焼く回数は，切り捨てが発生したときのみ+1を行う．
 - これは以下のようにも表現できる．ちょうど割り切れるとき以外は+1になる．
-	$$times = (N+X-1)/X$$
+	$$\text{times} = (N+X-1)/X$$
 
 
 ### code
@@ -16,7 +16,7 @@ int	mian(void)
 {
   int N,X,T;
   cin>>N>>X>>T;
-  int tiles=(N+X-1)/X;
+  int times=(N+X-1)/X;
 
   cout<<times*T<<endl;
 }

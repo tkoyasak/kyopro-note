@@ -5,7 +5,7 @@ url	: https://atcoder.jp/contests/abc183/tasks/abc183_c
 tag	: [[全探索]]  #ABC #gray
 
 ### idea
-- 都市の順列の全探索には $\text{next_permutation}$ を用いるとよい．
+- 都市の順列の全探索には $\text{next\_permutation}$ を用いるとよい．
 
 ### code
 ```cpp
