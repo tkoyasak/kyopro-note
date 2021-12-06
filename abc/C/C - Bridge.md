@@ -18,9 +18,9 @@ tag	: [[深さ優先探索]] [[LowLink]]  #ABC #green
 ### code
 ```cpp
 struct LowLink {
-  vp brs;
-
+  int brs;
   vi seen, ord, low;
+
   void	dfs(const graph& g, int v, int p=-1) {
     static int time=0;
 
@@ -33,7 +33,7 @@ struct LowLink {
       }
       dfs(g,c,v);
       chmin(low[v],low[c]);
-      if(low[c]>ord[v]) brs.emplace_back(v,c);
+      if(low[c]>ord[v]) brs++;
     }
   }
 
@@ -41,7 +41,7 @@ struct LowLink {
     int n=g.size();
 
     seen.assign(n,0); ord.assign(n,0); low.assign(n,0);
-    brs.clear();
+    brs=0;
     rep(i,n) if (!seen[i]) dfs(g,i);
   }
 };
@@ -59,6 +59,6 @@ int	main(void)
   LowLink ll;
   ll.solve(g);
 
-  cout<<ll.brs.size()<<endl;
+  cout<<ll.brs<<endl;
 }
 ```
