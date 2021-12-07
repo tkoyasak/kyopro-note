@@ -14,9 +14,8 @@ int main(void)
   int y,m,d;
   scanf("%d/%d/%d",&y,&m,&d);
 
-  using T = tuple<int, int, int>;
-  T cur(y,m,d),hei(2019,4,30);
+  tuple<int,int,int> cur(y,m,d),heisei(2019,4,30);
 
-  cout<<(cur<=hei?"Heisei":"TBD")<<endl;
+  cout<<(cur<=heisei?"Heisei":"TBD")<<endl;
 }
 ```
