@@ -2,7 +2,7 @@
 
 No	: 211  
 url	: https://atcoder.jp/contests/abc211/tasks/abc211_d  
-tag	: [[幅優先探索]] [[動的計画法]] #ABC #brown
+tag	: [[最短経路問題]] [[幅優先探索]] [[動的計画法]]  #ABC #brown
 
 ### idea
 - [幅優先探索について](https://youtu.be/I120G6rwz5A)

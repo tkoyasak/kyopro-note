@@ -2,7 +2,7 @@
 
 No	: 189  
 url	: https://atcoder.jp/contests/abc189/tasks/abc189_c  
-tag	: [[最大長方形]]  #ABC #brown
+tag	: [[最大長方形問題]]  #ABC #brown
 
 ### idea
 - ヒストグラムの中の最大長方形を求める問題に帰着できる．
