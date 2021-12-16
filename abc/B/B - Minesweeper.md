@@ -18,10 +18,10 @@ int main(void)
   rep(x,h) rep(y,w) if(s[x][y]=='.') {
     int cnt=0;
     reps(dx,-1,2) reps(dy,-1,2) {
-      if(dx==0&&dy==0) continue;
+      if(dx==0 && dy==0) continue;
       int xx=x+dx;
       int yy=y+dy;
-      if(0<=xx&&xx<w && 0<=yy&&yy<h)
+      if(0<=xx && xx<w && 0<=yy && yy<h)
       	if(s[xx][yy]=='#') ++cnt;
     }
     s[x][y]=cnt+'0';

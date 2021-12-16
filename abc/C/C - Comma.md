@@ -18,7 +18,7 @@ int	main(void)
 
   rep(i,16) {
     if(r<=n) ans+=(r-l)*cma;
-    else if(l<=n&&n<r) ans+=(n-l+1)*cma;
+    else if(l<=n && n<r) ans+=(n-l+1)*cma;
     l*=10;
     r*=10;
     if(i%3==2) cma++;

@@ -8,7 +8,7 @@ tag	: [[尺取り法]]  #ABC #green
 
 ### code
 ```cpp
-vp run_length_encoding(string s) {
+vp	run_length_encoding(string s) {
   int n=s.length(),cnt=1,pre=s[0];
   vp res;
 
@@ -29,16 +29,15 @@ int	main(void)
 {
   int n,k; cin>>n>>k;
   string s; cin>>s;
-  auto blocks=run_length_encoding(s);
+  vp blocks=run_length_encoding(s);
+  int ans=0,l=0,len=0,stand=0;
 
-  int m=blocks.size();
-  int ans=0,l=0,len=0,hstand=0;
-  rep(r,m) {
+  rep(r,blocks.size()) {
     len+=blocks[r].second;
-    if(blocks[r].first=='0') hstand++;
-    while(k<hstand) {
+    if(blocks[r].first=='0') stand++;
+    while(k<stand) {
       len-=blocks[l].second;
-      if(blocks[l].first=='0') hstand--;
+      if(blocks[l].first=='0') stand--;
       l++;
     }
     chmax(ans,len);
