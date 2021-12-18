@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #pragma GCC optimize("O3")
+using namespace std;
 
 #define all(obj) (obj).begin(),(obj).end()
 #define YesNo(bool) if(bool){cout<<"Yes"<<endl;}else{cout<<"No"<<endl;}
@@ -7,11 +8,9 @@
 #define rep(i,n) reps(i,0,n)
 #define rrep(i,a,n) for(int i=(a);i>=(int)(n);--i)
 #define fore(i,a) for(auto &i:(a))
-
 template<class T> inline bool chmin(T& a, T b) {if(a>b){a=b;return(true);}return(false);}
 template<class T> inline bool chmax(T& a, T b) {if(a<b){a=b;return(true);}return(false);}
 
-using namespace std;
 using ll=long long;
 using ull=unsigned long long;
 using ld=long double;
@@ -35,6 +34,5 @@ int	main(void)
   cout.tie(nullptr);
   /* ---------- ---------- ---------- */
 
-  
   
 }
