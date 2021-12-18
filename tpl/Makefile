@@ -1,10 +1,10 @@
 NAME			:= a.out
 CC				:= gpp
-SRCS			:= test.cpp
+SRC				:= test.cpp
 RM				:= rm -f
 
 all:
-	$(CC) -o $(NAME) $(SRCS)
+	$(CC) -o $(NAME) $(SRC)	
 	./$(NAME)
 
 clean:
@@ -13,10 +13,6 @@ clean:
 re: clean all
 
 tpl:
-	cp -n tpl.cpp test.cpp
-
-tplf:
 	cp -f tpl.cpp test.cpp
-
 
 .PHONY: all clean re tpl
