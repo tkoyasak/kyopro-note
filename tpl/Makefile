@@ -10,8 +10,6 @@ all:
 clean:
 	$(RM) -r $(NAME)
 
-re: clean all
-
 tpl:
 	cp -f tpl.cpp test.cpp
 
