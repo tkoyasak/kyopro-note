@@ -2,7 +2,7 @@
 
 No	: 216  
 url	: https://atcoder.jp/contests/abc216/tasks/abc216_c  
-tag	: [[bit]]  #ABC #gray
+tag	: [[Bit]]  #ABC #gray
 
 ### idea
 - 操作を逆にする，すなわち $n \rightarrow 0$ を考えると方針が立てやすい．

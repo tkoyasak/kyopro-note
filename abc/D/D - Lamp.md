@@ -2,7 +2,7 @@
 
 No	: 129  
 url	: https://atcoder.jp/contests/abc129/tasks/abc129_d  
-tag	: [[グリッド]]  #ABC #green
+tag	: [[Grid]]  #ABC #green
 
 ### idea
 - 障害物のないマスの連続する区間内であれば，どこに位置していてもライトによって照らすことのできるマスの数は等しい．

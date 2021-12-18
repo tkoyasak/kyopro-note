@@ -2,7 +2,7 @@
 
 No	: 121  
 url	: https://atcoder.jp/contests/abc121/tasks/abc121_d  
-tag	: [[bit]] [[整数]]  #ABC #green
+tag	: [[Bit]] [[整数]]  #ABC #green
 
 ### idea
 - [Editorial](https://img.atcoder.jp/abc121/editorial.pdf)

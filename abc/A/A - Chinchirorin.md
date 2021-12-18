@@ -2,7 +2,7 @@
 
 No	: 203  
 url	: https://atcoder.jp/contests/abc203/tasks/abc203_a  
-tag	: [[bit]]  #ABC  #gray
+tag	: [[Bit]]  #ABC  #gray
 
 ### idea
 - $x \land x=0$ を利用している．
