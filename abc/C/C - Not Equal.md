@@ -2,7 +2,7 @@
 
 No	: 209  
 url	: https://atcoder.jp/contests/abc209/tasks/abc209_c  
-tag	: [[組み合わせ]]  #ABC #gray
+tag	: [[数え上げ問題]]  #ABC #gray
 
 ### idea
 - 条件を見直す
