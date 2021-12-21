@@ -2,7 +2,7 @@
 
 No	: 125  
 url	: https://atcoder.jp/contests/abc125/tasks/abc125_c  
-tag	: [[整数]]  #ABC #green
+tag	: [[整数問題]]  #ABC #green
 
 ### idea
 - [解説配信 @snuke](https://youtu.be/8lm8o8L9Bmw)
