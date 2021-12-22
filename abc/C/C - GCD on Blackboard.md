@@ -5,7 +5,7 @@ url	: https://atcoder.jp/contests/abc125/tasks/abc125_c
 tag	: [[整数問題]]  #ABC #green
 
 ### idea
-- [解説配信 @snuke](https://youtu.be/8lm8o8L9Bmw)
+- [解説動画 @snuke](https://youtu.be/8lm8o8L9Bmw)
 - 前処理として，左区間/右区間の累積GCDを求めておく．
 
 ### code
