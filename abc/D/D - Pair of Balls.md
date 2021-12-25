@@ -44,7 +44,7 @@ int	main(void)
 ```
 
 ```cpp
-vi tpl_sort(vector<vi>& g,int n) {
+vi tpl_sort(vvi& g,int n) {
   vi indeg(n,0),order;
   queue<int> q;
 
