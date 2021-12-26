@@ -1,8 +1,11 @@
+#ifndef TEMPLATE_TKOYASAK
+
 #include <bits/stdc++.h>
 #pragma GCC optimize("O3")
 using namespace std;
 
 #define all(obj) (obj).begin(),(obj).end()
+#define rall(obj) (obj).rbegin(),(obj).rend()
 #define YesNo(bool) if(bool){cout<<"Yes"<<endl;}else{cout<<"No"<<endl;}
 #define reps(i,a,n) for(int i=(a);i<(int)(n);++i)
 #define rep(i,n) reps(i,0,n)
@@ -13,13 +16,15 @@ template<class T> inline bool chmax(T& a, T b) {if(a<b){a=b;return(true);}return
 
 using ll=long long;
 using ull=unsigned long long;
-using ld=long double;
-using vi=vector<int>;
-using vll=vector<long long>;
-using vld=vector<long double>;
-using vs=vector<string>;
-using vb=vector<bool>;
-using vp=vector<pair<int,int>>;
+using vi=vector<int>; using vvi=vector<vi>; using vvvi=vector<vvi>;
+using vl=vector<ll>; using vvl=vector<vl>; using vvvl=vector<vvl>;
+using vb=vector<bool>; using vvb=vector<vb>; using vvvb=vector<vvb>;
+using vs=vector<string>; using vvs=vector<vs>; using vvvs=vector<vvs>;
+using pii=pair<int,int>; using pll=pair<ll,ll>; using pil=pair<int,ll>; using pli=pair<ll,int>;
+using vpii=vector<pii>; using vpll=vector<pll>; using vpil=vector<pil>; using vpli=vector<pli>;
+
+#endif
+
 const int inf=1e9+10;
 const int mod=1e9+7;
 const long long INF=1e18;
