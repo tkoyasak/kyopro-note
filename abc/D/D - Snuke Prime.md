@@ -11,7 +11,7 @@ tag	: [[いもす法]]  #ABC #green
 int	main(void)
 {
   int n,c; cin>>n>>c;
-  vp imos;
+  vpii imos;
   rep(i,n) {
     int a,b,c; cin>>a>>b>>c;
     imos.emplace_back(a,c);

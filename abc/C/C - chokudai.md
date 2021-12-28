@@ -17,7 +17,7 @@ int	main(void)
   string s; cin>>s;
   string chokudai="chokudai";
   int n=s.size();
-  vector<vi> dp(n+1,vi(9));
+  vvi dp(n+1,vi(9));
 
   dp[0][0]=1;
   rep(i,n) rep(j,9) {

@@ -21,7 +21,7 @@ tag	: [[構築]]  #ABC #green
 int	main(void)
 {
   int h,w; cin>>h>>w;
-  vector<vi> a(h,vi(w)); rep(i,h) rep(j,w) cin>>a[i][j];
+  vvi a(h,vi(w)); rep(i,h) rep(j,w) cin>>a[i][j];
   vector<tuple<int,int,int,int>> ans;
 
   rep(i,h-1) rep(j,w) if(a[i][j]%2) {

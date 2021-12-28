@@ -13,7 +13,7 @@ tag	: [[数え上げ問題]]  #ABC #green
 int	main(void)
 {
   int n; cin>>n;
-  vector<vi> cnt(10,vi(10,0));
+  vvi cnt(10,vi(10,0));
   int ans=0;
 
   reps(i,1,n+1) {

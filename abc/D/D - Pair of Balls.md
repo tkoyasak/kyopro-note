@@ -2,7 +2,7 @@
 
 No	: 216  
 url	: https://atcoder.jp/contests/abc216/tasks/abc216_d  
-tag	: [[貪欲]] [[トポロジカルソート]]  #ABC #green
+tag	: [[貪欲]] [[トポロジカルソート]] [[DAG]]  #ABC #green
 
 ### idea
 
@@ -65,13 +65,16 @@ vi tpl_sort(vvi& g,int n) {
 int	main(void)
 {
   int n,m; cin>>n>>m;
-  vvi v(m),g(n);
+  vvi g(n);
   rep(i,m) {
-    int k; cin>>k; v[i]=vi(k);
-    rep(j,k) cin>>v[i][j],v[i][j]--;
+    int k; cin>>k;
+    int pre;
+    rep(j,k) {
+      int x; cin>>x; x--;
+      if(j>0) g[pre].push_back(x);
+      pre=x;
+    }
   }
-
-  rep(i,m) rep(j,v[i].size()-1) g[v[i][j]].push_back(v[i][j+1]);
 
   YesNo(tpl_sort(g,n).size()==n);
 }

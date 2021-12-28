@@ -14,29 +14,29 @@ int	main(void)
 {
   int h,w; cin>>h>>w;
   vs s(h); rep(i,h) cin>>s[i];
-  vector<vi> cnt(h,vi(w));
+  vvi cnt(h,vi(w));
   int ans=0;
 
   rep(i,h) {
     vb done(w,false);
     rep(j,w) if(!done[j] && s[i][j]=='.') {
       int r=0;
-      while(j+r<w && s[i][j+r]=='.') ++r;
-      rep(k,r) {
-        cnt[i][j+k]+=r;
+      while(j+r<w && s[i][j+r]=='.') {
         done[j+k]=true;
+        ++r;
       }
+      rep(k,r) cnt[i][j+k]+=r;
     }
   }
   rep(j,w) {
     vb done(h,false);
-    rep(i,h) if(!done[j] && s[i][j]=='.') {
+    rep(i,h) if(!done[i] && s[i][j]=='.') {
       int r=0;
-      while(i+r<h && s[i+r][j]=='.') ++r;
-      rep(k,r) {
-        cnt[i+k][j]+=r;
+      while(i+r<h && s[i+r][j]=='.') {
         done[i+k]=true;
+        ++r;
       }
+      rep(k,r) cnt[i+k][j]+=r;
     }
   }
   rep(i,h) rep(j,w) chmax(ans,cnt[i][j]-1);
@@ -50,7 +50,7 @@ int	main(void)
 {
   int h,w; cin>>h>>w;
   vs s(h); rep(i,h) cin>>s[i];
-  vector<vi> c(h,vi(w)),d(w,vi(h));
+  vvi c(h,vi(w)),d(w,vi(h));
   int ans=0;
 
   rep(i,h) {

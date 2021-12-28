@@ -8,9 +8,9 @@ tag	: [[尺取り法]]  #ABC #green
 
 ### code
 ```cpp
-vp	run_length_encoding(string s) {
+vpii	run_length_encoding(string s) {
   int n=s.length(),cnt=1,pre=s[0];
-  vp res;
+  vpii res;
 
   reps(i,1,n) {
     if(pre!=s[i]) {
@@ -29,7 +29,7 @@ int	main(void)
 {
   int n,k; cin>>n>>k;
   string s; cin>>s;
-  vp blocks=run_length_encoding(s);
+  vpii blocks=run_length_encoding(s);
   int ans=0,l=0,len=0,stand=0;
 
   rep(r,blocks.size()) {

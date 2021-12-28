@@ -24,7 +24,7 @@ int	main(void)
   }
   int ans=0;
 
-  sort(all(f),greater<ll>());
+  sort(rall(f));
   while(d<=0) d+=f[ans++];
 
   cout<<ans<<endl;

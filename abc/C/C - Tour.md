@@ -13,7 +13,7 @@ tag	: [[幅優先探索]]  #ABC #brown
 int	main(void)
 {
   int n,m; cin>>n>>m;
-  vector<vi> g(n);
+  vvi g(n);
   rep(i,m){
     int a,b; cin>>a>>b;
     g[a-1].push_back(b-1);
