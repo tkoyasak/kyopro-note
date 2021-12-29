@@ -6,6 +6,7 @@ using namespace std;
 
 #define all(obj) (obj).begin(),(obj).end()
 #define rall(obj) (obj).rbegin(),(obj).rend()
+#define sz(obj) (int)(obj).size()
 #define YesNo(bool) if(bool){cout<<"Yes"<<endl;}else{cout<<"No"<<endl;}
 #define reps(i,a,n) for(int i=(a);i<(int)(n);++i)
 #define rep(i,n) reps(i,0,n)
@@ -25,6 +26,10 @@ using vpii=vector<pii>; using vpll=vector<pll>; using vpil=vector<pil>; using vp
 
 #endif
 
+const int dx4[4]={1,0,-1,0};
+const int dy4[4]={0,1,0,-1};
+const int dx8[8]={1,1,0,-1,-1,-1,0,1};
+const int dy8[8]={0,1,1,1,0,-1,-1,-1};
 const int inf=1e9+10;
 const int mod=1e9+7;
 const long long INF=1e18;
