@@ -1,7 +1,7 @@
 #ifndef TEMPLATE_TKOYASAK
 
 #include <bits/stdc++.h>
-#pragma GCC optimize("O3")
+// #pragma GCC optimize("O3")
 using namespace std;
 
 #define all(obj) (obj).begin(),(obj).end()
@@ -17,6 +17,7 @@ template<class T> inline bool chmax(T& a, T b) {if(a<b){a=b;return(true);}return
 
 using ll=long long;
 using ull=unsigned long long;
+using vc=vector<char>; using vvc=vector<vc>; using vvvc=vector<vvc>;
 using vi=vector<int>; using vvi=vector<vi>; using vvvi=vector<vvi>;
 using vl=vector<ll>; using vvl=vector<vl>; using vvvl=vector<vvl>;
 using vb=vector<bool>; using vvb=vector<vb>; using vvvb=vector<vvb>;
