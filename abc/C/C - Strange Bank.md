@@ -2,7 +2,7 @@
 
 No	: 099  
 url	: https://atcoder.jp/contests/abc099/tasks/abc099_c  
-tag	: [[動的計画法]]  #ABC #green
+tag	: [[動的計画法]] [[貪欲法]] #ABC #green
 
 ### idea
 - さまざまな方法で解けるとのこと．

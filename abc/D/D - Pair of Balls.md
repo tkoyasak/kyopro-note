@@ -2,7 +2,7 @@
 
 No	: 216  
 url	: https://atcoder.jp/contests/abc216/tasks/abc216_d  
-tag	: [[貪欲]] [[トポロジカルソート]] [[DAG]]  #ABC #green
+tag	: [[貪欲法]] [[トポロジカルソート]] [[DAG]]  #ABC #green
 
 ### idea
 
