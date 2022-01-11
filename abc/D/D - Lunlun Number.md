@@ -6,7 +6,7 @@ tag	: [[深さ優先探索]]  #ABC #green
 
 ### idea
 - [解説記事 @drken](https://drken1215.hatenablog.com/entry/2020/04/05/150900)
-- 「$K$ 番目に小さい値を求めよ」という問題で `priority_queue` を使えるケースは多い，とのこと．
+- 「$K$ 番目に小さい値を求めよ」という問題で `std::priority_queue` を使えるケースは多い，とのこと．
 
 ### code
 ```cpp
