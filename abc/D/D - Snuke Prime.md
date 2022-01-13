@@ -20,7 +20,7 @@ int	main(void)
   ll ans=0,p=0;
 
   sort(all(imos));
-  rep(i,imos.size()-1) {
+  rep(i,sz(imos)-1) {
     p+=imos[i].second;
     ll u=imos[i+1].first-imos[i].first;
     ans+=min<ll>(c,p)*u;

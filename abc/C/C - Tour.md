@@ -34,7 +34,7 @@ int	main(void)
         que.push(w);
       }
     }
-    ans+=seen.size();
+    ans+=sz(seen);
   }
 
   cout<<ans<<endl;

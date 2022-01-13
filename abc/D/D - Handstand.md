@@ -32,7 +32,7 @@ int	main(void)
   vpii blocks=run_length_encoding(s);
   int ans=0,l=0,len=0,stand=0;
 
-  rep(r,blocks.size()) {
+  rep(r,sz(blocks)) {
     len+=blocks[r].second;
     if(blocks[r].first=='0') stand++;
     while(k<stand) {

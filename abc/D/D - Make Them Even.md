@@ -33,7 +33,7 @@ int	main(void)
     ans.push_back(make_tuple(h-1,j,h-1,j+1));
   }
 
-  cout<<ans.size()<<endl;
+  cout<<sz(ans)<<endl;
   fore(t,ans) {
     int i,j,k,l;
     tie(i,j,k,l)=t;

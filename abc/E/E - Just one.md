@@ -2,7 +2,7 @@
 
 No	: 226  
 url	: https://atcoder.jp/contests/abc226/tasks/abc226_e  
-tag	: [[グラフ]] [[UnionFind]]  #ABC #cyan
+tag	: [[グラフ]] [[UnionFind]]  #ABC #cyan #解説AC 
 
 ### idea
 - 各頂点から辺が１本ずつ出ているので，「頂点数 $\neq$ 辺数」の場合は達成不可能．

@@ -50,7 +50,7 @@ int	main(void)
  
   reps(d,1,11) reps(x,1,10) {
     dfs(x,1,d,ans);
-    if(ans.size()>=k) {
+    if(sz(ans)>=k) {
       cout<<ans[k-1]<<endl;
       return 0;
     }

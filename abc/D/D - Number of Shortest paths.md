@@ -35,7 +35,7 @@ int	main(void)
   que.push(0);
   dist[0]=0;
   dp[0]=1;
-  while(que.size()) {
+  while(!que.empty()) {
     int u=que.front();
     que.pop();
     fore(v,g[u]) {

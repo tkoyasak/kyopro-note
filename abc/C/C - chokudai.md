@@ -16,7 +16,7 @@ int	main(void)
 {
   string s; cin>>s;
   string chokudai="chokudai";
-  int n=s.size();
+  int n=sz(s);
   vvi dp(n+1,vi(9));
 
   dp[0][0]=1;
@@ -35,7 +35,7 @@ int	main(void)
 {
   string s; cin>>s;
   string chokudai="*chokudai";
-  int n=s.size();
+  int n=sz(s);
   vi dp(9);
 
   dp[0]=1;

@@ -69,7 +69,7 @@ class LowLink {
   }
 
   void	solve(const vvi& g) {
-    int n=g.size();
+    int n=sz(g);
 
     seen.assign(n,0); ord.assign(n,0); low.assign(n,0);
     brs=0;
