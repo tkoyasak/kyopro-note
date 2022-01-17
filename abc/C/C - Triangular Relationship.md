@@ -2,7 +2,7 @@
 
 No	: 102  
 url	: https://atcoder.jp/contests/abc108/tasks/arc102_a  
-tag	: [[余り]]  #ABC #green
+tag	: [[剰余]]  #ABC #green
 
 ### idea
 - 条件「 $K \mid a+b$ 」かつ「 $K \mid b+c$ 」かつ「 $K \mid c+a$ 」より次が成り立つ．

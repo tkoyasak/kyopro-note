@@ -2,7 +2,7 @@
 
 No	: 218  
 url	: https://atcoder.jp/contests/abc218/tasks/abc218_c  
-tag	: [[図形問題]]  #ABC #green
+tag	: [[図形問題]] [[回転]]  #ABC #green
 
 ### idea
 - `#` の位置を集合として持つと，移動や回転で範囲外アクセスを気にする必要がなくなる．

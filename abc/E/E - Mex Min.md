@@ -30,8 +30,8 @@ int	main(void)
   }
 
   rep(i,n) {
-    int pre=-1;
     pos[i].emplace_back(n);
+    int pre=-1;
     fore(j,pos[i]) {
       if(j-pre>m) {
         cout<<i<<endl;

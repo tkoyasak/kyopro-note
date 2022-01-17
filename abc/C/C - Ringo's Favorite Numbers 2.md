@@ -2,7 +2,7 @@
 
 No	: 200  
 url	: https://atcoder.jp/contests/abc200/tasks/abc200_c  
-tag	: [[余り]]  #ABC #gray
+tag	: [[剰余]]  #ABC #gray
 
 ### idea
 - 「$A_i - A_j$ が200の倍数である」ことは，「$A_i$ を200で割った余りと $A_j$ を200で割った余りが等しい」といえる．
