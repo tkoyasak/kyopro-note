@@ -30,15 +30,14 @@ int	main(void)
 
   while(n) {
     if(n&1) {
-      ans+='A';
-      --n;
+      ans='A'+ans;
+      n--;
     }
     else {
-      ans+='B';
+      ans='B'+ans;
       n/=2;
     }
   }
-  reverse(all(ans));
 
   cout<<ans<<endl;
 }
