@@ -1,7 +1,7 @@
 # 8 Queens Problem
 
 No	: ALDS1 - 13A  
-url	: https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_13_A  
+url	: https://onlinejudge.u-aizu.ac.jp/problems/ALDS1_13_A  
 tag	: [[深さ優先探索]]  #AOJ #black
 
 ### idea
