@@ -17,12 +17,13 @@ int	main(void)
 {
   int n,d; cin>>n>>d;
   vpii p(n);
-  rep(i,n) cin>>p[i].second>>p[i].first;
+  rep(i,n) cin>>p[i].sd>>p[i].ft;
   int ans=0,x=-inf;
 
   sort(all(p(n)));
-  for(auto& [r,l]:p(n)) {
-    if(x+d-1<l) ans++,x=r;
+  for(auto& [r,l]:p) {
+    if(x+d>l) continue;
+    ans++,x=r;
   }
 
   cout<<ans<<endl;
