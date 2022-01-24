@@ -5,7 +5,7 @@ url	: https://atcoder.jp/contests/abc147/tasks/abc147_d
 tag	: [[XOR]] [[Bit]] [[整数問題]]  #ABC #cyan #解説AC 
 
 ### idea
-- XORは「**角桁ごとに考える**」というのが定石．
+- XORは「**各桁ごとに考える**」というのが定石．
 - その視点で問題は次のように考えることができる．
 	- $\sum_{i=1}^{N-1}\sum_{j=i+1}^{N}(A_i\text{ XOR }A_j)$ の $N(N+1)/2$ 個の値のうち $d$ 桁目が $1$ であるものの個数を $S_d$とする．
 	- このとき答えに $S_d \times 2^d$ を加算する．
