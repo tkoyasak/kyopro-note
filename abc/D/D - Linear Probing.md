@@ -5,19 +5,19 @@ url	: https://atcoder.jp/contests/abc228/tasks/abc228_d
 tag	: [[深さ優先探索]] [[UnionFind]]  #ABC #green
 
 ### idea
-- 愚直に処理を行うと，例えば次のケースで計算量が $O(Q^2)$ となる．
+- 愚直に処理を行うと，例えば次のケースで計算量が $\mathcal{O}(Q^2)$ となる．
 	- すべてのクエリに対して $t_i=1$ かつ $x_i \mod N =0$ である．
 
 ##### Method 1 (Set)
 - まだ $A_i=-1$ である $i$ を `std::set` で保持しておく．
-- 計算量は $O(N+Q \log Q)$．
+- 計算量は $\mathcal{O}(N+Q \log Q)$．
 
 ##### Method 2 (経路圧縮)
 - $0 \le h \lt N$ に対し，$h$ を $1$ ずつ増やしていき，初めて $A_{h\mod N}=-1$ になったときの $h \mod N$ の値を $p(h)$ と表す．
 - $p(h)$ を求めるのは，次のように行う．
 	- $A_h\neq -1$ である間，$h \leftarrow p(h)$ を繰り返す．
 	- $A_k=-1$ を $-1$ でない値に書き換えるとき，$p(k)\leftarrow p(k+1)$ と更新する．
-- 計算量は $O(N + Q \log N)$．
+- 計算量は $\mathcal{O}(N + Q \log N)$．
 
 ### code
 ```cpp

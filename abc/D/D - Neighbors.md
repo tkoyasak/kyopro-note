@@ -9,7 +9,7 @@ tag	: [[UnionFind]]  #ABC #brown
 - パスグラフの条件 :
   - 次数が２以下
   - サイクルがない (木構造) -> UnionFindで判定
-- 計算量は $O(N+M)$．
+- 計算量は $\mathcal{O}(N+M)$．
 
 ### code
 ```cpp

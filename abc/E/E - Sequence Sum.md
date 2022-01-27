@@ -8,12 +8,12 @@ tag	: [[整数問題]] [[ダブリング]]  #ABC #green
 ##### Method 1
 - $f(x,m)$ のとり得る値は，高々 $m$ 個である．
 - 周期性を利用して $\sum_{i=1}^{n} A_i$ を求めることができる．
-- 計算量は $O(M)$．
+- 計算量は $\mathcal{O}(M)$．
 ##### Method 2
 - 次のテーブルを用意することで，ダブリングを用いて求めることができる．
 	- $\text{next}[p][v] \coloneqq$ $v \pmod M$ から $2^p$ ステップ進んだ先の値．
 	- $\text{sum}[p][v] \coloneqq$ $v \pmod M$ から $2^p$ 項分の総和．
-- 計算量は $O(M \log N)$．
+- 計算量は $\mathcal{O}(M \log N)$．
 
 
 ### code

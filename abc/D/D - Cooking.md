@@ -7,7 +7,7 @@ tag	: [[動的計画法]] [[部分和]]  #ABC #green
 ### idea
 - $\text{dp}[i] \coloneqq$ 料理時間 $T$ について部分和 $i$ を作れるかどうか，と定義する．
 - 部分和を求めるときには，`std::bitset` を使うと実装や実行時間を抑えられる．
-- 計算量は $O(N+\sum_{i} T_i)$．
+- 計算量は $\mathcal{O}(N+\sum_{i} T_i)$．
 
 ### code
 ```cpp

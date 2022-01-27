@@ -8,7 +8,7 @@ tag	: [[ダブリング]]  #ABC #brown
 - $\text{dl}[i][cur] \coloneqq$ 現在頂点 $cur$ にいて，そこから $2^i$ 回遷移したときの遷移先，と定義する．
 - $2^i=2^{i-1}+2^{i-1}$ なので，$2^i$回遷移した先は以下で求めることができる．
     $$\text{dl}[i][cur]=\text{dl}[i-1][\text{dl}[i-1][cur]]$$
-- 計算量は $O(N \log K)$．
+- 計算量は $\mathcal{O}(N \log K)$．
 
 ### code
 ```cpp

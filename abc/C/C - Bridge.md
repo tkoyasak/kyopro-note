@@ -8,7 +8,7 @@ tag	: [[UnionFind]] [[深さ優先探索]] [[LowLink]]  #ABC #green
 ##### Method 1 (UnionFind)
 - 各辺 $e$ ごとに，辺 $e$ を除いた $M-1$ 本の辺からなるグラフを毎回生成する．
 - このように生成したグラフが連結かどうかは Union-Find を用いて判定する．
-- 計算量は $O(M^2 \alpha (N))$．
+- 計算量は $\mathcal{O}(M^2 \alpha (N))$．
 
 ##### Method 2 (LowLink)
 - DFSをしたとき，後退辺 (DFSで通らなかった辺) は橋となり得ない．
@@ -19,7 +19,7 @@ tag	: [[UnionFind]] [[深さ優先探索]] [[LowLink]]  #ABC #green
 - 「 点 $u$ が間接点である 」$\Leftrightarrow$
 	- 「 $u$ が根であるとき，２個以上の子を持つ 」
 	- 「 $u$ が根でないとき，$u$ のある子 $v$ について $\text{ord}[u] \le \text{low}[v]$ を満たす 」
-- 計算量は $O(N+M)$．
+- 計算量は $\mathcal{O}(N+M)$．
 
 ### code
 ```cpp

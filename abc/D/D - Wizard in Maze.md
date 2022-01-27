@@ -2,7 +2,7 @@
 
 No	: 176  
 url	: https://atcoder.jp/contests/abc176/tasks/abc176_d  
-tag	: [[幅優先探索]] [[01-BFS]]  #ABC #cyan #解説AC 
+tag	: [[幅優先探索]] [[01-BFS]] [[最短経路問題]]  #ABC #cyan #解説AC 
 
 ### idea
 - [01-BFS について @betrue12](https://betrue12.hateblo.jp/entry/2018/12/08/000020)

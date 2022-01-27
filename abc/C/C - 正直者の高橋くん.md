@@ -1,10 +1,11 @@
-# D - Number of Shortest paths
+# C - 正直者の高橋くん
 
-No	: 211  
-url	: https://atcoder.jp/contests/abc211/tasks/abc211_d  
-tag	: [[最短経路問題]] [[幅優先探索]] [[動的計画法]]  #ABC #brown
+No	: 021  
+url	: https://atcoder.jp/contests/abc021/tasks/abc021_c  
+tag	: [[幅優先探索]] [[最短経路問題]] [[動的計画法]]  #ABC #cyan #解説AC 
 
 ### idea
+- [ABC211-D](https://atcoder.jp/contests/abc211/tasks/abc211_d) と同じ問題！
 - [幅優先探索について](https://youtu.be/I120G6rwz5A)
 - 最短経路を求める幅優先探索では，最短距離を表す配列を $\text{dist}$ として用意する．
   - $v$ から遷移できる $v'$ に対して次を行う．
@@ -15,40 +16,40 @@ tag	: [[最短経路問題]] [[幅優先探索]] [[動的計画法]]  #ABC #brow
     - $v'$ に未到達なら，$\text{dist}[v']=\text{dist}[v]+1$ に更新し，$\text{dp}[v']$ に $\text{dp}[v]$ を代入する．
     - $v'$ に到達済かつ，$\text{dist}[v']=\text{dist}[v]+1$ ならば，$\text{dp}[v']$ に $\text{dp}[v]$ を加算する．
     - そうでないなら，何もしない．
-- 計算量は $O(N+M)$．
+- 計算量は $\mathcal{O}(N+M)$．
 
 ### code
 ```cpp
 int	main(void)
 {
-  int n,m; cin>>n>>m;
-  graph g(n);
+  int n,a,b,m; cin>>n>>a>>b>>m,a--,b--;
+  vvi g(n);
   rep(i,m) {
-    int a,b; cin>>a>>b; a--; b--;
-    g[a].push_back(b);
-    g[b].push_back(a);
+    int u,v; cin>>u>>v,u--,v--;
+    g[u].push_back(v);
+    g[v].push_back(u);
   }
-  queue<int> que;
-  vi dist(n,-1);
-  vi dp(n);
 
-  que.push(0);
-  dist[0]=0;
-  dp[0]=1;
-  while(!que.empty()) {
-    int u=que.front();
-    que.pop();
-    fore(v,g[u]) {
-      if(dist[v]==-1) {
-        que.push(v);
-        dist[v]=dist[u]+1;
+  vi dist(n,-1);
+  vector<mint> dp(n,0);
+  queue<int> q;
+
+  dist[a]=0;
+  q.push(a);
+  dp[a]=1;
+  while(!q.empty()) {
+    int u=q.front(); q.pop();
+    fore(to,g[u]) {
+      if(dist[to]==-1) {
+        q.push(to);
+        dist[to]=dist[u]+1;
       }
-      if(dist[v]==dist[u]+1) {
-        (dp[v]+=dp[u])%=mod;
+      if(dist[to]==dist[u]+1) {
+        dp[to]+=dp[u];
       }
     }
   }
 
-  cout<<dp[n-1]<<endl;
+  cout<<dp[b]<<endl;
 }
 ```

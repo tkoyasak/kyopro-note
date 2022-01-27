@@ -9,8 +9,8 @@ tag	: [[二分探索]]  #ABC #blue #解説AC
 - このとき判定条件は次の通り．
 	- 風船 $i$ は $\frac{X-H_i}{S_i}$ 秒以内に割らなければならない．
 	- もし $X<H_i$ ならばこの $X$ では不可能となる．
-- $X$ の候補は二分探索することで $O(\log(max_{i \in N}(H_i+NS_i)))$ で絞ることができる．
-- 計算量は $O(N \log N \times \log(max_{i \in N}(H_i+NS_i)))$
+- $X$ の候補は二分探索することで $\mathcal{O}(\log(max_{i \in N}(H_i+NS_i)))$ で絞ることができる．
+- 計算量は $\mathcal{O}(N \log N \times \log(max(H_i+NS_i)_{i \in N}))$
 
 ### code
 ```cpp

@@ -8,7 +8,7 @@ tag	: [[動的計画法]] [[DAG]]  #ABC #green
 - $X_i \lt Y_i$ のため，グラフは DAG(Directed Acyclic Graph) である．
 - $\text{dp}[i] \coloneqq$ 街 $i$ に到達できる街 (街 $i$ 自身は含まない) における支出の最小値，と定義する．
 - $A_i-\text{dp}[i]$ の最大値が答えとなる．
-- 計算量は $O(N+M)$．
+- 計算量は $\mathcal{O}(N+M)$．
 
 ### code
 ```cpp

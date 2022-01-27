@@ -10,7 +10,7 @@ tag	: [[動的計画法]]  #ABC #gray
   - $\text{dp}[0]=\text{t}[0]$，$\text{dp}[i]=\text{min}(\text{dp}[i-1]+\text{t}[i-1],\text{t}[i])$ となる．
 - 円周を考えると，$n-2 \rightarrow n-1 \rightarrow 0 \rightarrow 1$ となり，$\text{dp}[0]$ が更新される場合がある．
 - したがって，２周目の更新を行う．しかし，３周目以降の更新の必要はない．
-- 計算量は $O(N \times 2)$ となる．
+- 計算量は $\mathcal{O}(N \times 2)$ となる．
 
 ### code
 ```cpp

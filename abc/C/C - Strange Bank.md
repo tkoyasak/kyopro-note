@@ -6,7 +6,7 @@ tag	: [[動的計画法]] [[貪欲法]] #ABC #green
 
 ### idea
 - さまざまな方法で解けるとのこと．
-- 計算量はすべて $O(N \log N)$．
+- 計算量はすべて $\mathcal{O}(N \log N)$．
 - [解説記事 @drken](https://qiita.com/drken/items/ace3142967c4f01d42e9)
 1. メモ化再帰 (動的計画法)
 2. 配るDP (動的計画法)
