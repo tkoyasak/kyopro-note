@@ -4,13 +4,23 @@
 // #pragma GCC optimize("O3")
 using namespace std;
 
+#define endl '\n'
+#define ft first
+#define sd second
+#define bit(n) (1LL<<(n))
+#define pcnt(n) __builtin_popcount(n)
 #define all(obj) (obj).begin(),(obj).end()
 #define rall(obj) (obj).rbegin(),(obj).rend()
 #define sz(obj) (int)(obj).size()
+#define srt(obj) sort(all(obj))
+#define rsrt(obj) sort(rall(obj))
+#define rev(obj) reverse(all(obj))
 #define YesNo(bool) if(bool){cout<<"Yes"<<endl;}else{cout<<"No"<<endl;}
-#define reps(i,a,n) for(int i=(a);i<(int)(n);++i)
-#define rep(i,n) reps(i,0,n)
-#define rrep(i,a,n) for(int i=(a);i>=(int)(n);--i)
+#define rep1(n) for (int i=0;i<n;++i)
+#define rep2(i,n) for (int i=0;i<n;++i)
+#define rep3(i,m,n) for (int i=m;i<n;++i)
+#define overload3(o1,o2,o3,name,...) name
+#define rep(...) overload3(__VA_ARGS__,rep3,rep2,rep1)(__VA_ARGS__)
 #define fore(i,a) for(auto &i:(a))
 template<class T> inline bool chmin(T& a, T b) {if(a>b){a=b;return(true);}return(false);}
 template<class T> inline bool chmax(T& a, T b) {if(a<b){a=b;return(true);}return(false);}
