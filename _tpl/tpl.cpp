@@ -16,12 +16,20 @@ using namespace std;
 #define rsrt(obj) sort(rall(obj))
 #define rev(obj) reverse(all(obj))
 #define YesNo(bool) if(bool){cout<<"Yes"<<endl;}else{cout<<"No"<<endl;}
-#define rep1(n) for (int i=0;i<n;++i)
-#define rep2(i,n) for (int i=0;i<n;++i)
-#define rep3(i,m,n) for (int i=m;i<n;++i)
-#define overload3(o1,o2,o3,name,...) name
-#define rep(...) overload3(__VA_ARGS__,rep3,rep2,rep1)(__VA_ARGS__)
+
+#define overload4(o1,o2,o3,o4,name,...) name
+#define rep1(n) for (int i=0;i<(n);++i)
+#define rep2(i,n) for (int i=0;i<(n);++i)
+#define rep3(i,m,n) for (int i=(m);i<(n);++i)
+#define rep4(i,m,n,d) for (int i=(m);i<(n);i+=(d))
+#define rep(...) overload4(__VA_ARGS__,rep4,rep3,rep2,rep1)(__VA_ARGS__)
+#define per1(n) for (int i=(n)-1;i>=0;--i)
+#define per2(i,n) for (int i=(n)-1;i>=0;--i)
+#define per3(i,m,n) for (int i=(m)-1;i>=n;--i)
+#define per4(i,m,n,d) for (int i=(m)-1;i>=n;i-=(d))
+#define per(...) overload4(__VA_ARGS__,per4,per3,per2,per1)(__VA_ARGS__)
 #define fore(i,a) for(auto &i:(a))
+
 template<class T> inline bool chmin(T& a, T b) {if(a>b){a=b;return(true);}return(false);}
 template<class T> inline bool chmax(T& a, T b) {if(a<b){a=b;return(true);}return(false);}
 
@@ -56,5 +64,5 @@ int	main(void)
   cout.tie(nullptr);
   /* ---------- ---------- ---------- */
 
-  
+
 }
