@@ -2,7 +2,7 @@
 
 No	: 096  
 url	: https://atcoder.jp/contests/abc096/tasks/abc096_d  
-tag	: [[整数問題]] [[剰余]] [[構築]]  #ABC #cyan #解説AC 
+tag	: [[整数問題]] [[剰余]] [[構築]]  #ABC #cyan 
 
 ### idea
 - どの異なる５つを選んでも合成数となるパターンを探す．
