@@ -7,12 +7,13 @@ all:
 	./$(NAME)
 
 clean:
-	$(RM) -r $(NAME)
+	$(RM) -r $(NAME) contest
 
 tpl:
 	cp -f tpl.cpp test.cpp
 
 abc:
+	mkdir -p contest
 	touch contest/{a..f}.cpp
 	fd cpp contest | xargs -n 1 cp tpl.cpp
 
