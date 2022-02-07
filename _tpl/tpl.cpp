@@ -1,12 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+// #pragma GCC target("avx2")
+// #pragma GCC optimize("O3")
+// #pragma GCC optimize("unroll-loops")
+
+// #include <atcoder/all>
+// #include <atcoder/modint>
+// #include <atcoder/dsu>
+// using namespace atcoder;
+// using mint=modint998244353;
+// using mint=modint1000000007;
+// using vm=vector<mint>; using vvm=vector<vm>; using vvvm=vector<vvm>;
+
+const int inf=1e9+10;
+const long long INF=1e18;
+// const int mod=1e9+7;
+const int mod=998244353;
+
 #ifndef TEMPLATE_TKOYASAK
 
-#include <bits/stdc++.h>
-// #pragma GCC optimize("O3")
-using namespace std;
+const int dx4[4]={1,0,-1,0};
+const int dy4[4]={0,1,0,-1};
+const int dx8[8]={1,1,0,-1,-1,-1,0,1};
+const int dy8[8]={0,1,1,1,0,-1,-1,-1};
 
 #define endl '\n'
 #define ft first
 #define sd second
+#define pb push_back
+#define eb emplace_back
 #define bit(n) (1LL<<(n))
 #define pcnt(n) __builtin_popcount(n)
 #define all(obj) (obj).begin(),(obj).end()
@@ -40,21 +62,11 @@ using vl=vector<ll>; using vvl=vector<vl>; using vvvl=vector<vvl>;
 using vd=vector<double>; using vvd=vector<vd>; using vvvd=vector<vvd>;
 using vb=vector<bool>; using vvb=vector<vb>; using vvvb=vector<vvb>;
 using vs=vector<string>; using vvs=vector<vs>; using vvvs=vector<vvs>;
-using pii=pair<int,int>; using pll=pair<ll,ll>; using pil=pair<int,ll>; using pli=pair<ll,int>; using pdd=pair<double,double>;
-using vpii=vector<pii>; using vpll=vector<pll>; using vpil=vector<pil>; using vpli=vector<pli>; using vpdd=vector<pdd>;
+using pii=pair<int,int>; using pll=pair<ll,ll>; using pil=pair<int,ll>; using pli=pair<ll,int>;
+using vpii=vector<pii>; using vpll=vector<pll>; using vpil=vector<pil>; using vpli=vector<pli>;
+using pdd=pair<double,double>; using vpdd=vector<pdd>;
 
 #endif
-
-const int dx4[4]={1,0,-1,0};
-const int dy4[4]={0,1,0,-1};
-const int dx8[8]={1,1,0,-1,-1,-1,0,1};
-const int dy8[8]={0,1,1,1,0,-1,-1,-1};
-const int inf=1e9+10;
-// const int mod=1e9+7;
-const int mod=998244353;
-const long long INF=1e18;
-const long double EPS=1e-10;
-
 
 int	main(void)
 {
@@ -64,5 +76,5 @@ int	main(void)
   cout.tie(nullptr);
   /* ---------- ---------- ---------- */
 
-
+  
 }
