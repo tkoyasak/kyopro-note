@@ -1,10 +1,9 @@
 NAME    := a.out
-CC      := gpp
-SRC     := test.cpp
+CC      := g++ -O2
 RM      := rm -f
 
 all:
-	$(CC) -o $(NAME) $(SRC)	
+	$(CC) -o $(NAME) test.cpp
 	./$(NAME)
 
 clean:
@@ -42,4 +41,4 @@ f:
 	./$(NAME)
 
 
-.PHONY: all clean tpl
+.PHONY: all clean tpl abc a b c d e f
