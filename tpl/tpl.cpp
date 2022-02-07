@@ -5,17 +5,16 @@ using namespace std;
 // #pragma GCC optimize("unroll-loops")
 
 // #include <atcoder/all>
-// #include <atcoder/modint>
+#include <atcoder/modint>
 // #include <atcoder/dsu>
-// using namespace atcoder;
-// using mint=modint998244353;
+using namespace atcoder;
+using mint=modint998244353;
 // using mint=modint1000000007;
-// using vm=vector<mint>; using vvm=vector<vm>; using vvvm=vector<vvm>;
 
 const int inf=1e9+10;
 const long long INF=1e18;
-// const int mod=1e9+7;
 const int mod=998244353;
+// const int mod=1e9+7;
 
 #ifndef TEMPLATE_TKOYASAK
 
@@ -59,6 +58,7 @@ using ll=long long; using ull=unsigned long long;
 using vc=vector<char>; using vvc=vector<vc>; using vvvc=vector<vvc>;
 using vi=vector<int>; using vvi=vector<vi>; using vvvi=vector<vvi>;
 using vl=vector<ll>; using vvl=vector<vl>; using vvvl=vector<vvl>;
+using vm=vector<mint>; using vvm=vector<vm>; using vvvm=vector<vvm>;
 using vd=vector<double>; using vvd=vector<vd>; using vvvd=vector<vvd>;
 using vb=vector<bool>; using vvb=vector<vb>; using vvvb=vector<vvb>;
 using vs=vector<string>; using vvs=vector<vs>; using vvvs=vector<vvs>;
