@@ -5,11 +5,15 @@ using namespace std;
 // #pragma GCC optimize("unroll-loops")
 
 // #include <atcoder/all>
-#include <atcoder/modint>
 // #include <atcoder/dsu>
-using namespace atcoder;
-using mint=modint998244353;
+// #include <atcoder/segtree>
+// #include <atcoder/lazysegtree>
+// #include <atcoder/modint>
+// using namespace atcoder;
+// using mint=modint;
+// using mint=modint998244353;
 // using mint=modint1000000007;
+// #define MODINT 1
 
 const int inf=1e9+10;
 const long long INF=1e18;
@@ -27,6 +31,7 @@ const int dy8[8]={0,1,1,1,0,-1,-1,-1};
 #define ft first
 #define sd second
 #define pb push_back
+#define pf push_front
 #define eb emplace_back
 #define bit(n) (1LL<<(n))
 #define pcnt(n) __builtin_popcount(n)
@@ -53,7 +58,13 @@ const int dy8[8]={0,1,1,1,0,-1,-1,-1};
 
 template<class T> inline bool chmin(T& a, T b) {if(a>b){a=b;return(true);}return(false);}
 template<class T> inline bool chmax(T& a, T b) {if(a<b){a=b;return(true);}return(false);}
+long long modpow(long long x,long long n,long long m) {if(m==1)return(0);long long val=1;while(n){if(n&1){val=(val*x)%m;}x=(x*x)%m;n>>=1;}return(val);}
+long long modinv(long long x,long long m) {return(modpow(x,m-2,m));}
 
+
+#ifndef MODINT
+ #define mint int
+#endif
 using ll=long long; using ull=unsigned long long;
 using vc=vector<char>; using vvc=vector<vc>; using vvvc=vector<vvc>;
 using vi=vector<int>; using vvi=vector<vi>; using vvvi=vector<vvi>;
@@ -71,9 +82,9 @@ using pdd=pair<double,double>; using vpdd=vector<pdd>;
 int	main(void)
 {
   /* ---------- ---------- ---------- */
-  ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
-  cout.tie(nullptr);
+  ios_base::sync_with_stdio(false);
+  cout<<fixed<<setprecision(15);
   /* ---------- ---------- ---------- */
 
   
