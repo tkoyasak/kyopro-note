@@ -10,17 +10,13 @@ using namespace std;
 // #include <atcoder/lazysegtree>
 // #include <atcoder/modint>
 // using namespace atcoder;
-// using mint=modint;
-// using mint=modint998244353;
-// using mint=modint1000000007;
-// #define MODINT 1
 
 const int inf=1e9+10;
 const long long INF=1e18;
-const int mod=998244353;
+// const int mod=998244353;
 // const int mod=1e9+7;
 
-#ifndef TEMPLATE_TKOYASAK
+#pragma region tkoyasak_template
 
 const int dx4[4]={1,0,-1,0};
 const int dy4[4]={0,1,0,-1};
@@ -77,7 +73,7 @@ using pii=pair<int,int>; using pll=pair<ll,ll>; using pil=pair<int,ll>; using pl
 using vpii=vector<pii>; using vpll=vector<pll>; using vpil=vector<pil>; using vpli=vector<pli>;
 using pdd=pair<double,double>; using vpdd=vector<pdd>;
 
-#endif
+#pragma endregion
 
 int	main(void)
 {
