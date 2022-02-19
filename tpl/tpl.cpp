@@ -16,7 +16,7 @@ const long long INF=1e18;
 // const int mod=998244353;
 // const int mod=1e9+7;
 
-#pragma region tkoyasak_template
+#ifndef tkoyasak_template
 
 const int dx4[4]={1,0,-1,0};
 const int dy4[4]={0,1,0,-1};
@@ -73,7 +73,7 @@ using pii=pair<int,int>; using pll=pair<ll,ll>; using pil=pair<int,ll>; using pl
 using vpii=vector<pii>; using vpll=vector<pll>; using vpil=vector<pil>; using vpli=vector<pli>;
 using pdd=pair<double,double>; using vpdd=vector<pdd>;
 
-#pragma endregion
+#endif
 
 int	main(void)
 {
