@@ -1,6 +1,6 @@
-# 5.4 - Number of Multiples 2
+# Number of Multiples 2
 
-No	: 5.4.4
+No	: 5.4.4  
 url	: https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_be  
 tag	: [[包除原理]] [[数え上げ問題]] [[全探索]]  #E8-book
 
@@ -21,7 +21,8 @@ int	main(void)
   rep(msk,1,bit(k)) {
     ll val=1;
     rep(i,k) if(msk&bit(i)) val=lcm(val,v[i]);
-    ans+=(n/lc)*(pcnt(msk)&1?1:-1);
+    if(pcnt(msk)&1) ans+=n/val;
+    else ans-=n/val;
   }
 
   cout<<ans<<endl;
