@@ -40,12 +40,12 @@ const int dy8[8]={0,1,1,1,0,-1,-1,-1};
 #define YesNo(bool) if(bool){cout<<"Yes"<<endl;}else{cout<<"No"<<endl;}
 
 #define overload4(o1,o2,o3,o4,name,...) name
-#define rep1(n) for (int i=0;i<(n);++i)
+#define rep1(n) for (int rn4wqu22=0;rn4wqu22<(n);++rn4wqu22)
 #define rep2(i,n) for (int i=0;i<(n);++i)
 #define rep3(i,m,n) for (int i=(m);i<(n);++i)
 #define rep4(i,m,n,d) for (int i=(m);i<(n);i+=(d))
 #define rep(...) overload4(__VA_ARGS__,rep4,rep3,rep2,rep1)(__VA_ARGS__)
-#define per1(n) for (int i=(n)-1;i>=0;--i)
+#define per1(n) for (int rn4wqu22=(n)-1;rn4wqu22>=0;--rn4wqu22)
 #define per2(i,n) for (int i=(n)-1;i>=0;--i)
 #define per3(i,m,n) for (int i=(m)-1;i>=n;--i)
 #define per4(i,m,n,d) for (int i=(m)-1;i>=n;i-=(d))
