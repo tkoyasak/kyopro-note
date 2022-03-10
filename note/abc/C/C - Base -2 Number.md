@@ -16,12 +16,13 @@ int	main(void)
 
   if(n==0) ans="0";
   while(n) {
-    int r=((n%2)+2)%2;
-    ans=(char)(r+'0')+ans;
+    int r=abs(n%(-2));
+    ans+=(char)(r+'0');
     n-=r;
     n/=-2;
   }
 
+  rev(ans);
   cout<<ans<<endl;
 }
 ```
